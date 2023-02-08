@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age of the user</title>
+</head>
+<body>
+    <form>
+        Enter the age:
+        <input type="number" id="age" name="age"/>
+        <input class="button" name="submit" type="submit" value="submit" onclick="ageFinder()" />
+    </form>
+    <script>
+        function ageFinder() {
+            
+            var age=document.getElementById('age').value;
+            
+            if (0<age&&age<=12){
+                alert("you are a child person");
+            }
+            else if(12<age&&age<=18){
+                alert("you are a teenager person");
+            }
+            else if(18<age&&age<=40){
+                alert("you are a young person");
+            }
+            else if(40<age){
+                alert(" you are a old person");
+            }
+           else{
+            alert("Are you kidding?!");
+           }
+        }
+
+    </script>
+</body>
+</html>
